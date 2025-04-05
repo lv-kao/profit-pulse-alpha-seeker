@@ -2,7 +2,7 @@
 import React from 'react';
 import { cn } from '@/lib/utils';
 import { Separator } from '@/components/ui/separator';
-import { ChartLineUp, BarChart4, LineChart } from 'lucide-react';
+import { ChartLine, BarChart4, LineChart } from 'lucide-react';
 
 interface DashboardLayoutProps {
   children: React.ReactNode;
@@ -15,7 +15,7 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children, className }
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur">
         <div className="container flex h-14 items-center">
           <div className="flex items-center gap-2 font-bold">
-            <ChartLineUp className="h-5 w-5 text-primary" />
+            <ChartLine className="h-5 w-5 text-primary" />
             <span>Profit Pulse Alpha Seeker</span>
           </div>
           <nav className="ml-auto flex items-center space-x-4">
